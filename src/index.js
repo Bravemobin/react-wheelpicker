@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./index.css";
 import { applyStyle } from "./applyStyle";
 
 class WheelPicker extends React.Component {
@@ -172,14 +171,14 @@ class WheelPicker extends React.Component {
           className="scroll-select-list"
           id={this.props.scrollerId}
         >
-          <div 
+          <div
             style={{
               paddingTop: `${parentHeight / 2 - height / 2}px`,
               paddingBottom: `${parentHeight / 2 - height / 2}px`
             }}
-            >
-              {this.renderListItems()}
-            </div>
+          >
+            {this.renderListItems()}
+          </div>
         </div>
       </div>
     );
